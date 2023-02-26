@@ -68,7 +68,7 @@ a{
 }
 
 .login{
-    background-image: url(images/photo.jpg);
+    background-image: url(https://i.ibb.co/PQrmLyB/photo.jpg);
     background-size: cover;
     height: 50px;
     width: 82px;
@@ -128,7 +128,7 @@ a{
     height: 200px;
     width: 100%;
     border: 2px solid black;
-    background-image: url(images/bg_image.jpg);
+    background-image: url(https://i.ibb.co/Pr7rjCr/bg-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -161,7 +161,7 @@ a{
 }
 
 .chatbot{
-    background-image: url(images/chatbot.jpg);
+    background-image: url(https://i.ibb.co/6wks7DF/chatbot.jpg);
     background-size: cover;
     height: 60px;
     width: 65px;
@@ -208,37 +208,37 @@ a{
 }
 
 #maths{
-    background-image: url(images/maths.jpg);
+    background-image: url(https://i.ibb.co/jRxZvnj/maths.jpg);
     background-size: cover;
 }
 
 #Data_structure{
-    background-image: url(images/Data_structure.jpg);
+    background-image: url(https://i.ibb.co/HV3XV9H/Data-structure.jpg);
     background-size: cover;
 }
 
 #DSGT{
-    background-image: url(images/DSGT.jpg);
+    background-image: url(https://i.ibb.co/MNLCSB1/DSGT.jpg);
     background-size: cover;
 }
 
 #maths{
-    background-image: url(images/maths.jpg);
+    background-image: url(https://i.ibb.co/jRxZvnj/maths.jpg);
     background-size: cover;
 }
 
 #DLCOA{
-    background-image: url(images/DLCA.jpg);
+    background-image: url(https://i.ibb.co/qsQ5qPX/DLCA.jpg);
     background-size: cover;
 }
 
 #java{
-    background-image: url(images/java.jpg);
+    background-image: url(https://i.ibb.co/qyL8F4z/java.jpg);
     background-size: cover;
 }
 
 #CG{
-    background-image: url(images/computer_graphics.jpg);
+    background-image: url(https://i.ibb.co/tm5C7FV/computer-graphics.jpg);
     background-size: cover;
 }
 
@@ -254,7 +254,7 @@ a{
 }
 
 #events{
-    background-image: url(images/events.jpg);
+    background-image: url(https://i.ibb.co/FK7G82j/event.jpg);
     background-size: cover;
 }
 
@@ -270,7 +270,7 @@ a{
 }
 
 #Contact-info{
-    background: url(images/contact_image.jpg);
+    background: url(https://i.ibb.co/ZKNRV8R/contact-image.jpg);
     background-size: cover;
 }
 
@@ -447,7 +447,7 @@ a{
   <main style="background-color:#e6e6fa8c ;">
     <div class="front">
       <div class="college_name">
-        <div><img class="clglogo" src="images/fcritlogo.jpg" alt="can't find"></div>
+        <div><img class="clglogo" src="https://i.ibb.co/GcCPnF3/fcritlogo.png" alt="can't find"></div>
         <b>
           AGNEL CHARITIES'
         </b>
@@ -569,7 +569,63 @@ a{
     </div>
   </footer>
   <div class="chatbot"></div>
-  <script src="./scripts/Student_page.js"></script>
+  <!-- <script src="./scripts/Student_page.js"></script> -->
+  <script>
+    var dt = new Date();
+
+function renderDate() {
+    // to get the end date of a month
+    var prev_Date = new Date(dt.getFullYear(), dt.getMonth(), 0).getDate();
+
+    var endDate = new Date(dt.getFullYear(), dt.getMonth() + 1, 0).getDate();
+
+    var month = [
+        "JANUARY",
+        "FEBRUARY",
+        "MARCH",
+        "APRIL",
+        "MAY",
+        "JUNE",
+        "JULY",
+        "AUGUST",
+        "SEPTEMBER",
+        "OCTOBER",
+        "NOVEMBER",
+        "DECEMBER",
+    ];
+
+    document.getElementById("mon").innerHTML = month[dt.getMonth()];
+    document.getElementById("date_str").innerHTML = dt.toDateString();
+
+    var today = new Date();
+
+    var cells = "";
+    dt.setDate(1);
+    var day = dt.getDay();
+    for (var x = day; x > 0; x--) {
+        cells += "<div class='prev_month'>" + (prev_Date - x + 1) + "</div>";
+    }
+    for (var i = 1; i <= endDate; i++) {
+        if (i == today.getDate() && today.getMonth() == dt.getMonth()) {
+            cells += "<div class='today'>" + i + "</div>";
+        } else {
+            cells += "<div>" + i + "</div>";
+        }
+    }
+
+    document.getElementsByClassName("dates")[0].innerHTML = cells;
+}
+
+function moveDate(para) {
+    if (para == "prev") {
+        dt.setMonth(dt.getMonth() - 1);
+    } else {
+        dt.setMonth(dt.getMonth() + 1);
+    }
+    renderDate();
+}
+
+  </script>
 </body>
 
 </html>

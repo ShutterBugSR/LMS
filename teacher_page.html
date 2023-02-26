@@ -100,17 +100,17 @@ body{
 }
 
 #sem3{
-    background-image: url(../images/sem3.jpg);
+    background-image: url(https://i.ibb.co/LPw34WM/sem3.jpg );
     background-size: cover;
 }
 
 #sem5{
-    background-image: url(../images/sem5.jpg);
+    background-image: url(https://i.ibb.co/6mr1hRB/sem5.png);
     background-size: cover;
 }
 
 #sem7{
-    background-image: url(../images/sem7.jpg);
+    background-image: url(https://i.ibb.co/cTNV5s2/sem7.jpg);
     background-size: cover;
 }
 
@@ -122,7 +122,7 @@ body{
     height: 200px;
     width: 100%;
     border: 2px solid black;
-    background-image: url(../images/bg_image.jpg);
+    background-image: url(https://i.ibb.co/Pr7rjCr/bg-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -159,7 +159,7 @@ body{
 
 
 .login{
-    background-image: url(../images/photo.jpg);
+    background-image: url(https://i.ibb.co/PQrmLyB/photo.jpg);
     background-size: cover;
     height: 50px;
     width: 82px;
@@ -199,7 +199,7 @@ body{
 }
 
 .chatbot{
-    background-image: url(../images/chatbot.jpg);
+    background-image: url(https://i.ibb.co/6wks7DF/chatbot.jpg);
     background-size: cover;
     height: 60px;
     width: 65px;
@@ -228,7 +228,7 @@ body{
 }
 
 #events{
-    background-image: url(../images/events.jpg);
+    background-image: url(https://i.ibb.co/FK7G82j/event.jpg);
     background-size: cover;
 }
 
@@ -250,7 +250,7 @@ body{
 }
 
 #Contact-info{
-    background: url(../images/contact_image.jpg);
+    background: url(https://i.ibb.co/ZKNRV8R/contact-image.jpg);
     background-size: cover;
 }
 
@@ -437,7 +437,7 @@ body{
   <main style="background-color:#e6e6fa8c ;">
     <div class="front">
       <div class="college_name">
-        <div><img class="clglogo" src="images/fcritlogo.jpg" alt="can't find"></div>
+        <div><img class="clglogo" src="https://i.ibb.co/GcCPnF3/fcritlogo.png" alt="can't find"></div>
         <b>
           AGNEL CHARITIES'
         </b>
@@ -542,7 +542,63 @@ body{
     </div>
   </footer>
   <div class="chatbot"></div>
-  <script src="./scripts/teacher_page.js"></script>
+  <!-- <script src="./scripts/teacher_page.js"></script> -->
+  <script>
+    var dt = new Date();
+
+function renderDate() {
+    // to get the end date of a month
+    var prev_Date = new Date(dt.getFullYear(), dt.getMonth(), 0).getDate();
+
+    var endDate = new Date(dt.getFullYear(), dt.getMonth() + 1, 0).getDate();
+
+    var month = [
+        "JANUARY",
+        "FEBRUARY",
+        "MARCH",
+        "APRIL",
+        "MAY",
+        "JUNE",
+        "JULY",
+        "AUGUST",
+        "SEPTEMBER",
+        "OCTOBER",
+        "NOVEMBER",
+        "DECEMBER",
+    ];
+
+    document.getElementById("mon").innerHTML = month[dt.getMonth()];
+    document.getElementById("date_str").innerHTML = dt.toDateString();
+
+    var today = new Date();
+
+    var cells = "";
+    dt.setDate(1);
+    var day = dt.getDay();
+    for (var x = day; x > 0; x--) {
+        cells += "<div class='prev_month'>" + (prev_Date - x + 1) + "</div>";
+    }
+    for (var i = 1; i <= endDate; i++) {
+        if (i == today.getDate() && today.getMonth() == dt.getMonth()) {
+            cells += "<div class='today'>" + i + "</div>";
+        } else {
+            cells += "<div>" + i + "</div>";
+        }
+    }
+
+    document.getElementsByClassName("dates")[0].innerHTML = cells;
+}
+
+function moveDate(para) {
+    if (para == "prev") {
+        dt.setMonth(dt.getMonth() - 1);
+    } else {
+        dt.setMonth(dt.getMonth() + 1);
+    }
+    renderDate();
+}
+
+  </script>
 </body>
 
 </html>
