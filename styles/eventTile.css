@@ -48,7 +48,7 @@
 }
 
 .login{
-    background-image: url(images/photo.jpg);
+    background-image: url(../images/photo.jpg);
     background-size: cover;
     height: 50px;
     width: 82px;
@@ -149,7 +149,7 @@
 }
 
 .highlights{
-    background: url(images/event.jpeg);
+    background: url(../images/event.jpeg);
     height: 50vh;
     width: 66vw;
     margin: 5%;
@@ -191,7 +191,7 @@
 
 
 .chatbot{
-    background-image: url(images/chatbot.jpg);
+    background-image: url(../images/chatbot.jpg);
     background-size: cover;
     height: 60px;
     width: 65px;
