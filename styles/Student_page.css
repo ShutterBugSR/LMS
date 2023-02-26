@@ -58,7 +58,7 @@ a{
 }
 
 .login{
-    background-image: url(images/photo.jpg);
+    background-image: url(../images/photo.jpg);
     background-size: cover;
     height: 50px;
     width: 82px;
@@ -118,7 +118,7 @@ a{
     height: 200px;
     width: 100%;
     border: 2px solid black;
-    background-image: url(images/bg_image.jpg);
+    background-image: url(../images/bg_image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -151,7 +151,7 @@ a{
 }
 
 .chatbot{
-    background-image: url(images/chatbot.jpg);
+    background-image: url(../images/chatbot.jpg);
     background-size: cover;
     height: 60px;
     width: 65px;
@@ -198,37 +198,37 @@ a{
 }
 
 #maths{
-    background-image: url(images/maths.jpg);
+    background-image: url(../images/maths.jpg);
     background-size: cover;
 }
 
 #Data_structure{
-    background-image: url(images/Data_structure.jpg);
+    background-image: url(../images/Data_structure.jpg);
     background-size: cover;
 }
 
 #DSGT{
-    background-image: url(images/DSGT.jpg);
+    background-image: url(../images/DSGT.jpg);
     background-size: cover;
 }
 
 #maths{
-    background-image: url(images/maths.jpg);
+    background-image: url(../images/maths.jpg);
     background-size: cover;
 }
 
 #DLCOA{
-    background-image: url(images/DLCA.jpg);
+    background-image: url(../images/DLCA.jpg);
     background-size: cover;
 }
 
 #java{
-    background-image: url(images/java.jpg);
+    background-image: url(../images/java.jpg);
     background-size: cover;
 }
 
 #CG{
-    background-image: url(images/computer_graphics.jpg);
+    background-image: url(../images/computer_graphics.jpg);
     background-size: cover;
 }
 
@@ -244,7 +244,7 @@ a{
 }
 
 #events{
-    background-image: url(images/events.jpg);
+    background-image: url(../images/events.jpg);
     background-size: cover;
 }
 
@@ -260,7 +260,7 @@ a{
 }
 
 #Contact-info{
-    background: url(images/contact_image.jpg);
+    background: url(../images/contact_image.jpg);
     background-size: cover;
 }
 

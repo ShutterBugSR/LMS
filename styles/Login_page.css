@@ -4,7 +4,7 @@
 }
 
 body{
-    background-image: url('images/agnel_background.JPEG');
+    background-image: url('../images/agnel_background.JPEG');
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
