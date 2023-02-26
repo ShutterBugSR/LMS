@@ -14,12 +14,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '../styles')));
 app.use(cors());
 
-// app.get('/', (req, res) => {
-//     res.sendFile(path.join(__dirname, '../eventTile.html'));
-// });
-
-app.get('/', (req, res) => {
-    res.send(path.join(__dirname, '../styles'));
+app.get('/', async (req, res) => {
+    res.sendFile(path.join(__dirname, '../Login_page.html'));
 });
 
 // Route for login
