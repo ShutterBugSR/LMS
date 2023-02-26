@@ -1,0 +1,117 @@
+*{
+    border-radius: 5px;
+    transition: transform 200ms ease-in-out;
+}
+
+body{
+    background-image: url('images/agnel_background.JPEG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+form {
+  display: grid;
+    border: 3px solid #f1f1f1;
+    margin: auto;
+    width: 25.5vw;
+    align-items: center;
+    height: 50vh;
+    opacity: 0.95;
+    border-radius: 2%;
+    background-color: white
+  }
+  
+  .options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 5% 1% 5%;
+    /* border: 2px solid black; */
+    margin-top: 2%;
+  }
+
+  .teacher, .student{
+    text-align: center;
+    width: 50%;
+    padding: 5%;
+    font-size:120%;
+    font-weight: 500;
+    cursor: pointer;
+    color: gray;
+    /* border: 2px solid black; */
+  }
+
+  .student{
+    color: black;
+    font-size: 130%;
+  }
+
+  hr{
+    width: 90%; 
+    justify-self: center;
+    background-color: black;
+    height: 10%;
+  }
+
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    padding: 3% 5%;
+    margin: 3% 3%;
+    display:block ;
+    border:1px solid #ccc;
+    box-sizing: border-box;
+    width: 95%;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 3% 7%;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .submit_button{
+    border-radius: 7%;
+    margin: 3% 0%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    transform: scale(1.06);
+    box-shadow: 3px 3px black;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 2%;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .box{
+    margin-top: 10%;
+  }
+
+  span.psw {
+    float: right;
+    padding-top: 5%;
+  }
+  
+  /* Change styles for span on extra small screens */
+  @media screen and (max-width: 150px) {
+    span.psw {
+      display: block;
+      float: none;
+    } 
+  }
+
+.input-edit:hover{
+  border: 1px solid grey;
+}

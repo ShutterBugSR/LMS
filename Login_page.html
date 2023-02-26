@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Login_page.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Learning Management System</title>
+</head>
+<body style="vertical-align:auto;"> 
+  <div class="box" >
+
+    <form action="./eventTile.html" method="post">
+      <div class="options">
+        <div class="student" onclick="Student()">Student login</div>
+        <div class="teacher" onclick="Teacher()">Teacher login</div>
+      </div>
+      <hr> 
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required class="input-edit">
+        
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required class="input-edit">
+
+        <button type="submit" class="submit_button">Login</button>
+
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+
+  </div>
+     <!-- <div class="container" style="background-color:#4fc3fe4a">
+        <button type="button" class="cancelbtn">Cancel</button>
+      </div> -->
+      <!-- <label style="float:right;">
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label> -->
+
+    <script>
+      function Teacher(){
+        const teacher = document.querySelector(".teacher");
+        const student = document.querySelector(".student");
+        teacher.style.color = "black"
+        student.style.color = "gray"
+        teacher.style.fontSize = "130%"
+        student.style.fontSize = "120%"
+      }
+
+      function Student(){
+        const teacher = document.querySelector(".teacher");
+        const student = document.querySelector(".student");
+        teacher.style.color = "gray"
+        student.style.color = "black"
+        student.style.fontSize = "130%"
+        teacher.style.fontSize = "120%"
+      }
+    </script>
+  </body>
+</html>
