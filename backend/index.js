@@ -75,7 +75,7 @@ app.post("/login", (req, res) => {
             }
         );
 
-        res.sendFile(path.join(__dirname, "../teacher_page.html"));
+        // res.sendFile(path.join(__dirname, "../Student_page.html"));
     } else if (username.length === 4) {
         if (username !== password) {
             res.redirect("/login");
