@@ -11,10 +11,15 @@ const port = 3000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, '../styles')));
 app.use(cors());
 
-app.get('/', async (req, res) => {
-    res.sendFile(path.join(__dirname, '../eventTile.html'));
+// app.get('/', (req, res) => {
+//     res.sendFile(path.join(__dirname, '../eventTile.html'));
+// });
+
+app.get('/', (req, res) => {
+    res.send(path.join(__dirname, '../styles'));
 });
 
 // Route for login
@@ -27,7 +32,7 @@ app.post('/login', (req, res) => {
               throw error;
             }
             if (results.rows.length > 0) {
-                res.sendFile(path.join(__dirname, '../eventTile.html'))
+                res.sendFile(path.join(__dirname, '../teacher_page.html'));
             } else {
               res.status(401).send('Invalid credentials');
             }
@@ -39,7 +44,7 @@ app.post('/login', (req, res) => {
               throw error;
             }
             if (results.rows.length > 0) {
-              res.redirect('/student');
+                res.sendFile(path.join(__dirname, '../teacher_page.html'));
             } else {
               res.status(401).send('Invalid credentials');
             }
