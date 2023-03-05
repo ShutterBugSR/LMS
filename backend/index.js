@@ -4,6 +4,8 @@ const session = require("express-session");
 const mysql = require("mysql");
 const cors = require("cors");
 const path = require("path");
+const http = require('http');
+const fs = require('fs');
 // const connectDB = require("./db");
 // const db = require("./db");
 
@@ -14,6 +16,7 @@ const db = mysql.createConnection({
     password: "Rose_9619608750",
     database: "lms",
 });
+
 
 const connectDB = () => {
     db.connect((err) => {
@@ -31,25 +34,37 @@ const port = 3000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, "../styles")));
+app.use(express.static(path.join(__dirname, "../public")));
 app.use(cors());
-app.use(
-    session({
-        secret: "mySecretKey",
-        resave: false,
-        saveUninitialized: true,
-        cookie: { secure: false },
-    })
-);
+// app.use(
+//     session({
+//         secret: "mySecretKey",
+//         resave: false,
+//         saveUninitialized: true,
+//         cookie: { secure: false },
+//     })
+// );
 
 app.get("/login", (req, res) => {
     res.sendFile(path.join(__dirname, "../Login_page.html"));
 });
 
+app.get("/Resources.html", (req, res) => {
+    res.sendFile(path.join(__dirname, "../Resources.html"));
+});
+
+app.get("/eventTile.html", (req, res) => {
+    res.sendFile(path.join(__dirname, "../eventTile.html"));
+});
+
+app.get("/Teacher's_info.html", (req, res) => {
+    res.sendFile(path.join(__dirname, "../Teacher's_info.html"));
+});
+
 // check whether a string is date or not
-const isDate = (date) => {
-    return new Date(date) !== "Invalid Date" && !isNaN(new Date(date));
-};
+// const isDate = (date) => {
+//     return new Date(date) !== "Invalid Date" && !isNaN(new Date(date));
+// };
 
 app.post("/login", (req, res) => {
     const username = req.body.username;
@@ -73,9 +88,7 @@ app.post("/login", (req, res) => {
                     res.redirect("/login");
                 }
             }
-        );
-
-        // res.sendFile(path.join(__dirname, "../Student_page.html"));
+        )
     } else if (username.length === 4) {
         if (username !== password) {
             res.redirect("/login");
@@ -100,4 +113,4 @@ app.post("/login", (req, res) => {
 
 app.listen(port, () => {
     console.log(`server listening at http://localhost:${port}`);
-});
+})
