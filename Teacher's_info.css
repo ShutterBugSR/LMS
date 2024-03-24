@@ -1,0 +1,236 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui;
+    transition: transform 330ms ease-in-out;
+}
+
+.colen{
+    background-color: #285aeded;
+    height: 55px;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.btn{
+    border: 2px solid white;
+    margin-right: 8px;
+    background-color: rgb(0, 0, 0);
+    height: 43px;
+    margin-top: 4px;
+}
+
+.form-control{
+    border: 2px solid black;
+    height: 43px;
+    margin-top: 4px;
+}
+
+.notification{
+    height: 38px;
+    width: 140px;
+    padding-left: 7px;
+    border-radius: 12px;
+    margin: -5px;
+    background-color: #fdd835;
+    border: 2px solid black;
+}
+.notification:hover{
+    transform: scale(1.04);
+    box-shadow: 3px 3px black;
+  transition: box-shadow 0.15s ease-in-out;
+}
+
+.navbar{
+    height: 71px;
+    border: 5px solid blueviolet;
+    padding: 3px;
+}
+
+.login{
+    background-image: url(images/photo.jpg);
+    background-size: cover;
+    height: 50px;
+    width: 82px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid black;
+    background-color: white;
+   
+}
+
+/* middle-section */
+
+.middle-section{
+    border: 2px solid black;
+    display: flex;
+}
+
+.Resources-option{
+    width: 25%;
+    background-color: rgb(202, 235, 255);
+}
+
+.left-items{
+    margin: 60px 80px 60px 80px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+    background-color: lightskyblue;
+    border: 3px solid rgb(71, 71, 71);
+}
+
+.left-items:hover{
+    transform: scale(1.04);
+    box-shadow: 3px 3px rgb(0, 0, 0);
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+.show-resources{
+    overflow: scroll;
+    overflow-x: hidden;
+    width: 75%;
+    background-color: #e6e6fa8c;
+    height: 725px;
+    display: flex;
+    justify-content: center;
+}
+
+#items1{
+    margin-top: 30%;
+}
+
+#items4{
+    margin-bottom: 31%;
+}
+
+.kitten_img{
+    opacity: 0.5;
+    margin: auto;
+}
+
+.last_part{
+    text-align: center;
+    height: 112px;
+    width: 100%;
+    background-color: grey;
+    border: 2px solid black;
+    padding-top: 20px;
+}
+
+.chatbot{
+    background-image: url(images/chatbot.jpg);
+    background-size: cover;
+    height: 60px;
+    width: 65px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: steelblue;
+    float: right;
+    margin-right: 20px;
+    position: fixed;
+    right:15px;
+    bottom: 34px;
+}
+.chatbot:hover{
+    transform: scale(1.3);
+    transition: 0.3s;
+}
+
+.headDept{
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    display: grid;
+    margin: 40px;
+    background-color: rgb(202, 235, 255);
+}
+
+.contact_img{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    justify-self: center;
+}
+
+.name{
+    border: 2px solid black;
+    text-align: center;
+    margin: 15px 0px 8px 0px;
+    width: 58%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #b5b5b5;
+}
+
+.position{
+    border: 2px solid black;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 8px;
+    width: 100%;
+    height: 41px;
+    display: flex;
+    justify-self: center;
+    border-radius: 5px;
+    background-color: #b5b5b5;
+    font-size: larger;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont{
+    height: 30px;
+}
+
+#mail{
+    margin-right: 10px;
+}
+#mail:hover{
+    transform: scale(1.4);
+}
+#phone{
+    margin-left: 10px;
+}
+#phone:hover{
+    transform: scale(1.4);
+}
+.reach{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.yearOfExp{
+    margin: auto;
+}
+
+.Dept_name{
+    border: 2px solid black;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    border-radius: 8px;
+    background-color: #b5b5b5;
+    font-size: xx-large;
+    font-weight: 500;
+    transform: scale(0.8);
+}
+
+.secondline{
+    display: flex;
+}
+
+#Head{
+    margin: 40px 0px 0px 0px;
+    position: relative;
+    left: 30.5%;
+    width: 40%;
+    padding: 40px;
+    display: grid;
+}

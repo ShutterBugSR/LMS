@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources Section</title>
+    <link rel="stylesheet" href="Resources.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com"     crossorigin>
+    <link href="https://fonts.googleapis.com/css2?  family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0, 700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&   family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,   900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"  rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://www.google.co.in/" target="_blank"><div class="notification"><b>Notifications</b></div></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse colen " id="navbarSupportedContent">
+            <form class="d-flex" role="search" style="position: relative; left: 71%;">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                style="border:2px solid black;">
+              <button class="btn btn-outline-success" type="submit" style="border: 2px solid white;
+                  margin-right: 8px; background-color:rgb(0, 0, 0)">Search</button>
+              <div class="login"></div>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <section class="middle-section">
+            <section class="Resources-option">
+                <div class="left-items" id="items1" onclick="showNotes()">Notes</div>
+                <div class="left-items" id="items2" onclick="showAssignments()">Assignments</div>
+                <div class="left-items" id="items3" onclick="showPYQ()">PYQ's</div>
+                <div class="left-items" id="items4" onclick="showDocs()">PDF/Documents</div>
+            </section>
+
+            <!-- First landing page  -->
+            <section class="show-resources">
+                <img src="images/kitten.png" alt="" class="kitten_img">
+            </section>
+
+            <!-- Notes section  -->
+            <section class="Notes_section">
+              <div class="subject_select">
+                <h5 style="margin: 5px;">Select subject</h5>
+              </div>
+              <div class="subject_list">
+                <div class="subjects">Maths</div>
+                <div class="subjects">DS</div>
+                <div class="subjects">CG</div>
+                <div class="subjects">DLCA</div>
+                <div class="subjects">DSGT</div>
+                <div class="subjects">Java</div>
+              </div>
+            </section>
+
+            <!-- Assignments section  -->
+            <section class="assignments">
+              <div class="pend_sub">
+                <button class="assign_status pending" onclick="showPending()">Pending</button>
+                <button class="assign_status submitted" onclick="showSubmitted()">Submitted</button>
+              </div>
+              <div class="pending_section">
+                <div class="pending-div">
+                 <div class="pen"></div>
+                 <button class="sub_button">Submit</button>
+                </div>
+                <div class="pending-div">
+                  <div class="pen"></div>
+                  <button class="sub_button">Submit</button>
+                 </div>
+                 <div class="pending-div">
+                  <div class="pen"></div>
+                  <button class="sub_button">Submit</button>
+                 </div>
+                 <div class="pending-div">
+                  <div class="pen"></div>
+                  <button class="sub_button">Submit</button>
+                 </div>
+                 <div class="pending-div">
+                  <div class="pen"></div>
+                  <button class="sub_button">Submit</button>
+                 </div>
+                
+              </div>
+              <div class="submitted_section">
+                <div class="submit-div">
+                  <div class="sub"></div>
+                </div>
+                <div class="submit-div">
+                  <div class="sub"></div>
+                </div>
+                <div class="submit-div">
+                  <div class="sub"></div>
+                </div>
+                <div class="submit-div">
+                  <div class="sub"></div>
+                </div>
+                <div class="submit-div">
+                  <div class="sub"></div>
+                </div>
+                <div class="submit-div">
+                  <div class="sub"></div>
+                </div>
+              </div>
+
+            </section>
+
+            <!-- Previous Year Question papers section  -->
+            <section class="pyq">
+              <div class="pend_sub">
+                <button class="assign_status submitted" onclick="first_half()">First Half</button>
+                <button class="assign_status submitted" onclick="second_half()">Second Half</button>
+              </div>
+              <!-- First Half section  -->
+              <div class="submitted_section first-half">
+                <div class="submit-div">
+                  <div class="sub"></div>
+                </div>
+                <div class="submit-div">
+                  <div class="sub"></div>
+                </div>
+                <div class="submit-div">
+                  <div class="sub"></div>
+                </div>
+                <div class="submit-div">
+                  <div class="sub"></div>
+                </div>
+                <div class="submit-div">
+                  <div class="sub"></div>
+                </div>
+                <div class="submit-div">
+                  <div class="sub"></div>
+                </div>
+              </div>
+              <!-- Second Half section  -->
+              <div class="submitted_section Second-half">
+                <div class="submit-div">
+                  <div class="sub"></div>
+                </div>
+                <div class="submit-div">
+                  <div class="sub"></div>
+                </div>
+                <div class="submit-div">
+                  <div class="sub"></div>
+                </div>
+                <div class="submit-div">
+                  <div class="sub"></div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Pdf and Documents section  -->
+            <section class="Doc-and-pdf">
+              <div class="documents"><h5>Documents and pdf</h5></div>
+              <div class="impDocs">
+                <div class="submit-div">
+                  <div class="sub"></div>
+                </div>
+                <div class="submit-div">
+                  <div class="sub"></div>
+                </div>
+                <div class="submit-div">
+                  <div class="sub"></div>
+                </div>
+                <div class="submit-div">
+                  <div class="sub"></div>
+                </div>
+                <div class="submit-div">
+                  <div class="sub"></div>
+                </div>
+                <div class="submit-div">
+                  <div class="sub"></div>
+                </div>
+              </div>
+
+
+            </section>
+
+        </section>
+      </main>
+
+      <footer>
+        <div class="last_part">
+          <h4>Father Conceicao Rodrigues Institue of Technology</h4>
+          <h4>Maintained and Developed by Computer Department of FCRIT 2022</h4>
+        </div>
+      </footer>
+      <div class="chatbot"></div>
+      <script src="Resources.js"></script>
+</body>
+</html>
